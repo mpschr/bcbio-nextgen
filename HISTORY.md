@@ -1,8 +1,13 @@
 ## 0.9.1 (in progress)
 
+- Move some structural variant calling, like CNV detection, prior to variant
+  calling. Allows use of CNV calls as inputs for variant detection tools.
 - Generalize support for interaction with blob storage and graphing to support
   alternative cloud providers. Initial support for interacting with Azure.
   Thanks to Alexandru Coman.
+- Remove VarDict call lines where reference and alternative allele are
+  identical.
+- Fix assignment issues during prioritization with new GEMINI and sqlite.
 
 ## 0.9.0 (20 June 2015)
 
